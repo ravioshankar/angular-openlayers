@@ -3,14 +3,13 @@ import Map from 'ol/Map';
 import Tile from 'ol/layer/Tile';
 import OSM from 'ol/source/OSM';
 import View from 'ol/View';
-import {fromLonLat} from 'ol/proj.js';
 
 @Component({
-  selector: 'app-map',
-  templateUrl: './map.component.html',
-  styleUrls: ['./map.component.scss']
+  selector: 'lib-angular-openlayers-i',
+  templateUrl: './angular-openlayers-i.component.html',
+  styleUrls: ['./angular-openlayers-i.component.scss']
 })
-export class MapComponent implements OnInit {
+export class AngularOpenlayersIComponent implements OnInit {
 
   map;
   constructor() { }
@@ -29,7 +28,7 @@ export class MapComponent implements OnInit {
         })
       ],
       view: new View({
-        center: fromLonLat([37.41, 8.82]),
+        center: [37.41, 8.82],
         zoom: 4
       })
     });

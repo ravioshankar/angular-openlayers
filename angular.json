@@ -127,6 +127,76 @@
           }
         }
       }
+    },
+    "angular-openlayers-I": {
+      "root": "projects/angular-openlayers-i",
+      "sourceRoot": "projects/angular-openlayers-i/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/angular-openlayers-i/tsconfig.lib.json",
+            "project": "projects/angular-openlayers-i/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/angular-openlayers-i/src/test.ts",
+            "tsConfig": "projects/angular-openlayers-i/tsconfig.spec.json",
+            "karmaConfig": "projects/angular-openlayers-i/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/angular-openlayers-i/tsconfig.lib.json",
+              "projects/angular-openlayers-i/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "angular-openlayers-II": {
+      "root": "projects/angular-openlayers-ii",
+      "sourceRoot": "projects/angular-openlayers-ii/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/angular-openlayers-ii/tsconfig.lib.json",
+            "project": "projects/angular-openlayers-ii/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/angular-openlayers-ii/src/test.ts",
+            "tsConfig": "projects/angular-openlayers-ii/tsconfig.spec.json",
+            "karmaConfig": "projects/angular-openlayers-ii/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/angular-openlayers-ii/tsconfig.lib.json",
+              "projects/angular-openlayers-ii/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "angular-openlayer"
