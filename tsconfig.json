@@ -29,6 +29,12 @@
       ],
       "angular-openlayers-ii/*": [
         "dist/angular-openlayers-ii/*"
+      ],
+      "angular-openlayers-iii": [
+        "dist/angular-openlayers-iii"
+      ],
+      "angular-openlayers-iii/*": [
+        "dist/angular-openlayers-iii/*"
       ]
     }
   }

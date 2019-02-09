@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-openlayer": {
+    "angular-openlayers": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-openlayer",
+            "outputPath": "dist/angular-openlayers",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -55,18 +55,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-openlayer:build"
+            "browserTarget": "angular-openlayers:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-openlayer:build:production"
+              "browserTarget": "angular-openlayers:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-openlayer:build"
+            "browserTarget": "angular-openlayers:build"
           }
         },
         "test": {
@@ -100,7 +100,7 @@
         }
       }
     },
-    "angular-openlayer-e2e": {
+    "angular-openlayers-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -109,11 +109,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angular-openlayer:serve"
+            "devServerTarget": "angular-openlayers:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "angular-openlayer:serve:production"
+              "devServerTarget": "angular-openlayers:serve:production"
             }
           }
         },
@@ -197,7 +197,42 @@
           }
         }
       }
+    },
+    "angular-openlayers-III": {
+      "root": "projects/angular-openlayers-iii",
+      "sourceRoot": "projects/angular-openlayers-iii/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/angular-openlayers-iii/tsconfig.lib.json",
+            "project": "projects/angular-openlayers-iii/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/angular-openlayers-iii/src/test.ts",
+            "tsConfig": "projects/angular-openlayers-iii/tsconfig.spec.json",
+            "karmaConfig": "projects/angular-openlayers-iii/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/angular-openlayers-iii/tsconfig.lib.json",
+              "projects/angular-openlayers-iii/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
-  "defaultProject": "angular-openlayer"
+  "defaultProject": "angular-openlayers"
 }

@@ -8,6 +8,7 @@ import { RouterModule, Routes, Router } from '@angular/router';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material';
 import { AngularOpenlayersIIModule } from 'projects/angular-openlayers-ii/src/lib/angular-openlayers-ii.module';
+import { AngularOpenlayersIIIModule } from 'projects/angular-openlayers-iii/src/lib/angular-openlayers-iii.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { AngularOpenlayersIIModule } from 'projects/angular-openlayers-ii/src/li
     AngularOpenlayersIModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    AngularOpenlayersIIModule
+    AngularOpenlayersIIModule,
+    AngularOpenlayersIIIModule
   ],
   providers: [],
   bootstrap: [AppComponent]
