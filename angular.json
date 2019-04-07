@@ -232,6 +232,41 @@
           }
         }
       }
+    },
+    "simple-popup": {
+      "root": "projects/simple-popup",
+      "sourceRoot": "projects/simple-popup/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/simple-popup/tsconfig.lib.json",
+            "project": "projects/simple-popup/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/simple-popup/src/test.ts",
+            "tsConfig": "projects/simple-popup/tsconfig.spec.json",
+            "karmaConfig": "projects/simple-popup/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/simple-popup/tsconfig.lib.json",
+              "projects/simple-popup/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "angular-openlayers"

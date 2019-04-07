@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CustomMarkersComponent } from './custom-markers.component';
+import { SimplePopupComponent } from './simple-popup.component';
 
-describe('CustomMarkersComponent', () => {
-  let component: CustomMarkersComponent;
-  let fixture: ComponentFixture<CustomMarkersComponent>;
+describe('SimplePopupComponent', () => {
+  let component: SimplePopupComponent;
+  let fixture: ComponentFixture<SimplePopupComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CustomMarkersComponent ]
+      declarations: [ SimplePopupComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CustomMarkersComponent);
+    fixture = TestBed.createComponent(SimplePopupComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
-import { AngularOpenlayersIIIComponent } from './custom-markers.component';
+import { CustomMarkersComponent } from './custom-markers.component';
 
 @NgModule({
-  declarations: [AngularOpenlayersIIIComponent],
+  declarations: [CustomMarkersComponent],
   imports: [
   ],
-  exports: [AngularOpenlayersIIIComponent]
+  exports: [CustomMarkersComponent]
 })
 export class CustomMarkersModule { }

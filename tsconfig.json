@@ -35,6 +35,12 @@
       ],
       "custom-markers/*": [
         "dist/custom-markers/*"
+      ],
+      "simple-popup": [
+        "dist/simple-popup"
+      ],
+      "simple-popup/*": [
+        "dist/simple-popup/*"
       ]
     }
   }

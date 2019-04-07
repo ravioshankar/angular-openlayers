@@ -9,6 +9,7 @@ import {MatButtonModule} from '@angular/material';
 import { OlProjSetupModule } from 'projects/ol-proj-setup/src/public_api';
 import { BasicSetupModule } from 'projects/basic-setup/src/public_api';
 import { CustomMarkersModule } from 'projects/custom-markers/src/public_api';
+import { SimplePopupModule } from 'projects/simple-popup/src/public_api';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { CustomMarkersModule } from 'projects/custom-markers/src/public_api';
     BrowserAnimationsModule,
     MatButtonModule,
     OlProjSetupModule,
-    CustomMarkersModule
+    CustomMarkersModule,
+    SimplePopupModule
   ],
   providers: [],
   bootstrap: [AppComponent]

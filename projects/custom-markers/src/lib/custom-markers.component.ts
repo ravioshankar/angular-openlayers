@@ -18,7 +18,7 @@ import {Icon, Style} from 'ol/style';
   templateUrl: './custom-markers.component.html',
   styleUrls: ['./custom-markers.component.scss']
 })
-export class AngularOpenlayersIIIComponent implements OnInit {
+export class CustomMarkersComponent implements OnInit {
   map;
   chicago;
   vectorSource;
