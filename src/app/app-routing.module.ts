@@ -1,20 +1,20 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AngularOpenlayersIComponent } from './../../projects/angular-openlayers-i/src/lib/angular-openlayers-i.component';
-import { AngularOpenlayersIIComponent } from 'projects/angular-openlayers-ii/src/lib/angular-openlayers-ii.component';
-import { AngularOpenlayersIIIComponent } from 'projects/angular-openlayers-iii/src/lib/angular-openlayers-iii.component';
+import { AngularOpenlayersIIIComponent } from 'projects/custom-markers/src/lib/custom-markers.component';
+import { BasicSetupComponent } from 'projects/basic-setup/src/public_api';
+import { OlProjSetupComponent } from 'projects/ol-proj-setup/src/public_api';
 
 const routes: Routes = [
   {
-    path: 'angular-openlayers-i',
-    component: AngularOpenlayersIComponent
+    path: 'basic-setup',
+    component: BasicSetupComponent
   },
   {
-    path: 'angular-openlayers-ii',
-    component: AngularOpenlayersIIComponent
+    path: 'ol-proj-setup',
+    component: OlProjSetupComponent
   },
   {
-    path: 'angular-openlayers-iii',
+    path: 'custom-markers',
     component: AngularOpenlayersIIIComponent
   }
 ];

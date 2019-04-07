@@ -18,23 +18,23 @@
       "dom"
     ],
     "paths": {
-      "angular-openlayers-i": [
-        "dist/angular-openlayers-i"
+      "basic-setup": [
+        "dist/basic-setup"
       ],
-      "angular-openlayers-i/*": [
-        "dist/angular-openlayers-i/*"
+      "basic-setup/*": [
+        "dist/basic-setup/*"
       ],
-      "angular-openlayers-ii": [
-        "dist/angular-openlayers-ii"
+      "ol-proj-setup": [
+        "dist/ol-proj-setup"
       ],
-      "angular-openlayers-ii/*": [
-        "dist/angular-openlayers-ii/*"
+      "ol-proj-setup/*": [
+        "dist/ol-proj-setup/*"
       ],
-      "angular-openlayers-iii": [
-        "dist/angular-openlayers-iii"
+      "custom-markers": [
+        "dist/custom-markers"
       ],
-      "angular-openlayers-iii/*": [
-        "dist/angular-openlayers-iii/*"
+      "custom-markers/*": [
+        "dist/custom-markers/*"
       ]
     }
   }
