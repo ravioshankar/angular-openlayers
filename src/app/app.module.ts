@@ -1,3 +1,4 @@
+import { CustomControlModule } from './../../projects/custom-control/src/lib/custom-control.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -24,7 +25,8 @@ import { SimplePopupModule } from 'projects/simple-popup/src/public_api';
     MatButtonModule,
     OlProjSetupModule,
     CustomMarkersModule,
-    SimplePopupModule
+    SimplePopupModule,
+    CustomControlModule
   ],
   providers: [],
   bootstrap: [AppComponent]

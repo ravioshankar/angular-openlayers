@@ -33,6 +33,7 @@ export class SimplePopupComponent implements OnInit {
       element: container,
       autoPan: true,
       autoPanAnimation: {
+        source: [0, 0],
         duration: 250
       }
     });
@@ -50,7 +51,7 @@ export class SimplePopupComponent implements OnInit {
       })
     });
 // pointermove
-    map.on('singleclick', function (evt) {
+    map.on('singleclick', function (evt: any) {
       const coordinate = evt.coordinate;
       const hdms = toStringHDMS(toLonLat(coordinate));
 

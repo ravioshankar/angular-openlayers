@@ -1,3 +1,4 @@
+import { CustomControlComponent } from './../../projects/custom-control/src/lib/custom-control.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
@@ -22,7 +23,11 @@ const routes: Routes = [
   {
     path: 'simple-popup',
     component: SimplePopupComponent
-  }
+  },
+  {
+    path: 'custom-control',
+    component: CustomControlComponent
+  },
 ];
 
 @NgModule({

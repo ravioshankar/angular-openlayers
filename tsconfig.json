@@ -41,6 +41,12 @@
       ],
       "simple-popup/*": [
         "dist/simple-popup/*"
+      ],
+      "custom-control": [
+        "dist/custom-control"
+      ],
+      "custom-control/*": [
+        "dist/custom-control/*"
       ]
     }
   }

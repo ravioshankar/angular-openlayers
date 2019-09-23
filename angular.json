@@ -267,6 +267,41 @@
           }
         }
       }
+    },
+    "custom-control": {
+      "root": "projects/custom-control",
+      "sourceRoot": "projects/custom-control/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/custom-control/tsconfig.lib.json",
+            "project": "projects/custom-control/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/custom-control/src/test.ts",
+            "tsConfig": "projects/custom-control/tsconfig.spec.json",
+            "karmaConfig": "projects/custom-control/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/custom-control/tsconfig.lib.json",
+              "projects/custom-control/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "angular-openlayers"
