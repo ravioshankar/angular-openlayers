@@ -15,7 +15,6 @@ import {fromLonLat, transform} from 'ol/proj.js';
 })
 export class CustomControlComponent implements OnInit {
 
-  @ViewChild('divMessages', {read: ElementRef}) private divMessages: ElementRef;
   constructor(private renderer: Renderer2) {
 
 
@@ -24,8 +23,6 @@ export class CustomControlComponent implements OnInit {
 
   appendElement;
   ngOnInit() {
-    this.appendElement = '<li>'+'Hello'+'</li>' ;
-this.divMessages = this.appendElement ;
     this.initilizeMap();
 
   }
@@ -63,6 +60,7 @@ this.divMessages = this.appendElement ;
 
       SourceSwitcher.prototype.switchSource = function switchSource () {
         // Add your logic here to switch layers
+        alert('Add you logic as per requirements');
         console.log('The map is ..', this.getMap().getLayers());
       };
 
