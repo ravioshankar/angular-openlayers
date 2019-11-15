@@ -11,6 +11,7 @@ import { OlProjSetupModule } from 'projects/ol-proj-setup/src/public_api';
 import { BasicSetupModule } from 'projects/basic-setup/src/public_api';
 import { CustomMarkersModule } from 'projects/custom-markers/src/public_api';
 import { SimplePopupModule } from 'projects/simple-popup/src/public_api';
+import { ClarityModule } from '@clr/angular';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { SimplePopupModule } from 'projects/simple-popup/src/public_api';
     OlProjSetupModule,
     CustomMarkersModule,
     SimplePopupModule,
-    CustomControlModule
+    CustomControlModule,
+    ClarityModule
   ],
   providers: [],
   bootstrap: [AppComponent]
