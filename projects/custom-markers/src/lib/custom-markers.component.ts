@@ -1,11 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import Map from 'ol/Map';
-import Tile from 'ol/layer/Tile';
-import OSM from 'ol/source/OSM';
 import View from 'ol/View';
 import Feature from 'ol/Feature';
-import sVector from 'ol/source/Vector';
-import lVector from 'ol/layer/Vector';
 import Point from 'ol/geom/Point';
 import { fromLonLat } from 'ol/proj.js';
 import {Tile as TileLayer, Vector as VectorLayer} from 'ol/layer';
@@ -50,7 +46,7 @@ export class CustomMarkersComponent implements OnInit {
     this.london = new Feature({
       geometry: new Point(fromLonLat([-0.12755, 51.507222]))
     });
-  
+
     this.madrid = new Feature({
       geometry: new Point(fromLonLat([-3.683333, 40.4]))
     });
@@ -63,7 +59,7 @@ export class CustomMarkersComponent implements OnInit {
         imgSize: [20, 20]
       }))
     }));
-  
+
     this.madrid.setStyle(new Style({
       image: new Icon(({
         color: [113, 140, 0],
@@ -72,15 +68,15 @@ export class CustomMarkersComponent implements OnInit {
         imgSize: [20, 20]
       }))
     }));
-  
+
     this.vectorSource = new VectorSource({
       features: [this.chicago, this.madrid,this.london]
     });
-  
+
     this.vectorLayer = new VectorLayer({
       source: this.vectorSource
     });
-  
+
     this.rasterLayer = new TileLayer({
       source: new TileJSON({
         url: 'https://api.tiles.mapbox.com/v3/mapbox.geography-class.json?secure',

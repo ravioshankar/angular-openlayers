@@ -4,8 +4,6 @@ import Tile from 'ol/layer/Tile';
 import OSM from 'ol/source/OSM';
 import View from 'ol/View';
 import {fromLonLat} from 'ol/proj.js';
-import TileLayer from 'ol/layer/Tile';
-import TileJSON from 'ol/source/TileJSON';
 
 @Component({
   selector: 'lib-ol-proj-setup',

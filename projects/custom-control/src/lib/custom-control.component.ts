@@ -1,13 +1,12 @@
-import { Component, OnInit, Renderer2, ViewChild, ElementRef } from '@angular/core';
+import { Component, OnInit, Renderer2 } from '@angular/core';
 import Map from 'ol/Map';
 import Tile from 'ol/layer/Tile';
 import OSM from 'ol/source/OSM';
 import View from 'ol/View';
 import {defaults as defaultControls, Control} from 'ol/control.js';
-import ol from 'ol';
-import Group from 'ol/layer/group';
+import Group from 'ol/layer/Group';
 import {Stamen} from 'ol/source';
-import {fromLonLat, transform} from 'ol/proj.js';
+import {transform} from 'ol/proj.js';
 @Component({
   selector: 'lib-custom-control',
   templateUrl: './custom-control.component.html',
@@ -67,7 +66,6 @@ export class CustomControlComponent implements OnInit {
       return SourceSwitcher;
     }(Control));
 
-
     this.map = new Map({
       controls: defaultControls().extend([
         new SourceSwitcher(this.renderer)
@@ -96,7 +94,6 @@ export class CustomControlComponent implements OnInit {
                   new Tile({
 
                       source: new Stamen({
-                        visible: true,
                           layer: 'watercolor'
                       })
                   }),
