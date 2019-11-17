@@ -1,1 +1,10 @@
 language: node_js
+node_js:
+- "10"
+
+notifications:
+  email:
+    recipients:
+    - ravioshankar@outlook.com
+    on_success: change
+    on_failure: always
