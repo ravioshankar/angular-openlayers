@@ -25,7 +25,7 @@ jobs:
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@2.0.3
       env:
-        ACTIONS_DEPLOY_KEY: ${{ secrets.angular_openlayers }}
+        ACTIONS_DEPLOY_KEY: ${{ secrets.ACCESS_TOKEN }}
         BASE_BRANCH: master # The branch the action should deploy from.
         BRANCH: gh-pages # The branch the action should deploy to.
         FOLDER: documentation
