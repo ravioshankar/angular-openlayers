@@ -1,11 +1,11 @@
-# AngularOpenlayersII
+# OlProjSetup
 
 This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.0.
 
 ## Code scaffolding
 
 Run `ng generate component component-name --project ol-proj-setup` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ol-proj-setup`.
-> Note: Don't forget to add `--project ol-proj-setup` or else it will be added to the default project in your `angular.json` file. 
+> Note: Don't forget to add `--project ol-proj-setup` or else it will be added to the default project in your `angular.json` file.
 
 ## Build
 
