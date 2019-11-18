@@ -12,6 +12,7 @@ import View from 'ol/View';
 export class BasicSetupComponent implements OnInit {
 
   map;
+  youtubeUrl = 'https://www.youtube.com/watch?v=csuEdZZebFs';
   constructor() { }
 
   ngOnInit() {

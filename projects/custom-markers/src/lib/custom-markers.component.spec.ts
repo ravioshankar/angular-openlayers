@@ -1,3 +1,5 @@
+import { ReadMeComponent } from './../../../read-me/src/lib/read-me.component';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CustomMarkersComponent } from './custom-markers.component';
@@ -8,7 +10,8 @@ describe('CustomMarkersComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CustomMarkersComponent ]
+      imports: [HttpClientTestingModule],
+      declarations: [ CustomMarkersComponent, ReadMeComponent ]
     })
     .compileComponents();
   }));
@@ -20,6 +23,7 @@ describe('CustomMarkersComponent', () => {
   });
 
   it('should create', () => {
+    component.youtubeUrl = 'https://test.url';
     expect(component).toBeTruthy();
   });
 });

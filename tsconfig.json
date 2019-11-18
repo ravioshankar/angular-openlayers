@@ -47,6 +47,12 @@
       ],
       "custom-control/*": [
         "dist/custom-control/*"
+      ],
+      "read-me": [
+        "dist/read-me"
+      ],
+      "read-me/*": [
+        "dist/read-me/*"
       ]
     }
   }

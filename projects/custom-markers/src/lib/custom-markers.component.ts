@@ -5,10 +5,9 @@ import Feature from 'ol/Feature';
 import Point from 'ol/geom/Point';
 import { fromLonLat } from 'ol/proj.js';
 import {Tile as TileLayer, Vector as VectorLayer} from 'ol/layer';
-import TileJSON from 'ol/source/TileJSON';
 import VectorSource from 'ol/source/Vector';
 import {Icon, Style} from 'ol/style';
-
+import OSM from 'ol/source/OSM';
 @Component({
   selector: 'lib-custom-markers',
   templateUrl: './custom-markers.component.html',
@@ -16,6 +15,7 @@ import {Icon, Style} from 'ol/style';
 })
 export class CustomMarkersComponent implements OnInit {
   map;
+  youtubeUrl = 'https://www.youtube.com/watch?v=WQFjZymnF3M';
   chicago;
   vectorSource;
   vectorLayer;
@@ -70,23 +70,18 @@ export class CustomMarkersComponent implements OnInit {
     }));
 
     this.vectorSource = new VectorSource({
-      features: [this.chicago, this.madrid,this.london]
+      features: [this.chicago, this.madrid, this.london]
     });
 
     this.vectorLayer = new VectorLayer({
       source: this.vectorSource
     });
 
-    this.rasterLayer = new TileLayer({
-      source: new TileJSON({
-        url: 'https://api.tiles.mapbox.com/v3/mapbox.geography-class.json?secure',
-        crossOrigin: ''
-      })
-    });
-
     this.map = new Map({
       target: 'map',
-      layers: [ this.rasterLayer, this.vectorLayer ],
+      layers: [ new TileLayer({
+        source: new OSM()
+      }), this.vectorLayer ],
       view: new View({
         center: fromLonLat([2.896372, 44.60240]),
         zoom: 3

@@ -1,3 +1,5 @@
+import { ReadMeComponent } from './../../../read-me/src/lib/read-me.component';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { SimplePopupComponent } from './simple-popup.component';
@@ -8,7 +10,8 @@ describe('SimplePopupComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SimplePopupComponent ]
+      imports: [HttpClientTestingModule],
+      declarations: [ SimplePopupComponent, ReadMeComponent ]
     })
     .compileComponents();
   }));
@@ -20,6 +23,7 @@ describe('SimplePopupComponent', () => {
   });
 
   it('should create', () => {
+    component.youtubeUrl = 'https://test.url';
     expect(component).toBeTruthy();
   });
 });

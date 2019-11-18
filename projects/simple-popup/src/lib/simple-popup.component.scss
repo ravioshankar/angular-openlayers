@@ -1,8 +1,3 @@
-.map {
-    height: 100%;
-    width: 100%;
-  }
-
   .ol-popup {
     position: absolute;
     background-color: white;
@@ -45,3 +40,28 @@
   .ol-popup-closer:after {
     content: "✖";
   }
+
+  .map {
+    height: 100%;
+    width: 100%;
+  }
+
+  .wrapper {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-rows: minmax(0, 1fr);
+    grid-template-areas:
+    'demo-area content-area';
+    grid-column-gap: 24px;
+  }
+
+  .content-area {
+    grid-area: content-area;
+
+   }
+
+   .demo-area {
+    grid-area: demo-area;
+
+   }

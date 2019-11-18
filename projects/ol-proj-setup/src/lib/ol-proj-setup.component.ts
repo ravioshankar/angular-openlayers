@@ -13,6 +13,7 @@ import {fromLonLat} from 'ol/proj.js';
 export class OlProjSetupComponent implements OnInit {
 
   map;
+  youtubeUrl = 'https://www.youtube.com/watch?v=xzljBhPQMJU';
   constructor() { }
 
   ngOnInit() {

@@ -13,7 +13,7 @@ import {transform} from 'ol/proj.js';
   styleUrls: ['./custom-control.component.scss']
 })
 export class CustomControlComponent implements OnInit {
-
+  youtubeUrl = 'https://www.youtube.com/watch?v=csuEdZZebFs';
   constructor(private renderer: Renderer2) {
 
 

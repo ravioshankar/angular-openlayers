@@ -1,6 +1,8 @@
+import { ReadMeComponent } from './../../../read-me/src/lib/read-me.component';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { BasicSetupComponent } from './basic-setup.component';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 
 describe('BasicSetupComponent', () => {
   let component: BasicSetupComponent;
@@ -8,7 +10,8 @@ describe('BasicSetupComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ BasicSetupComponent ]
+      imports: [HttpClientTestingModule],
+      declarations: [ BasicSetupComponent, ReadMeComponent ]
     })
     .compileComponents();
   }));
@@ -20,6 +23,7 @@ describe('BasicSetupComponent', () => {
   });
 
   it('should create', () => {
+    component.youtubeUrl = 'https://test.url';
     expect(component).toBeTruthy();
   });
 });

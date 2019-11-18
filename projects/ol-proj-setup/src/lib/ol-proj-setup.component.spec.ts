@@ -1,3 +1,5 @@
+import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { ReadMeComponent } from './../../../read-me/src/lib/read-me.component';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { OlProjSetupComponent } from './ol-proj-setup.component';
@@ -8,7 +10,9 @@ describe('OlProjSetupComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ OlProjSetupComponent ]
+      imports: [HttpClientTestingModule],
+      declarations: [ OlProjSetupComponent,
+      ReadMeComponent ]
     })
     .compileComponents();
   }));
@@ -20,6 +24,7 @@ describe('OlProjSetupComponent', () => {
   });
 
   it('should create', () => {
+    component.youtubeUrl = 'https://youtube.test';
     expect(component).toBeTruthy();
   });
 });

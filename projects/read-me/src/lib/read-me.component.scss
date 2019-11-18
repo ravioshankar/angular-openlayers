@@ -1,0 +1,16 @@
+.wrapper {
+    display: inline-grid;
+    width: auto;
+    height: auto;
+    grid-template-rows: minmax(0, 1fr);
+    grid-template-areas: 'youtube-video'
+    'read-me';
+}
+
+.youtube-video {
+    grid-area: youtube-video;
+}
+
+.read-me {
+    grid-area: read-me;
+}
