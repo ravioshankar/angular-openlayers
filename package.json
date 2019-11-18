@@ -8,7 +8,8 @@
     "test": "ng test --code-coverage  --progress=true",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "doc": "compodoc -p projects/tsconfig.compodoc.json -s -o -w"
+    "doc:local": "compodoc -p projects/tsconfig.compodoc.json -s -o -w",
+    "doc": "compodoc -p projects/tsconfig.compodoc.json"
   },
   "private": true,
   "dependencies": {
