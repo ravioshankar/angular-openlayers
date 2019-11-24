@@ -3,8 +3,8 @@ import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'lib-read-me',
-  templateUrl: '/read-me.component.html',
-  styleUrls: ['/read-me.component.scss']
+  templateUrl: './read-me.component.html',
+  styleUrls: ['./read-me.component.scss']
 })
 export class ReadMeComponent implements OnInit {
 
