@@ -17,9 +17,9 @@ jobs:
         npm ci
         npm run build --if-present
         npm test
+        npm run doc
     - name: GitHub Pages Deploy
       uses: sterlingwes/gh-pages-deploy-action@v1.1
       with:
         access-token: ${{ secrets.ACCESS_TOKEN }}
-        source-directory: ./documentation/
-        build-command: npm run doc
+        source-directory: ./dist/angular-openlayers
