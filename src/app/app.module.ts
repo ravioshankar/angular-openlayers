@@ -28,8 +28,8 @@ import { ClarityModule } from '@clr/angular';
     CustomMarkersModule,
     SimplePopupModule,
     CustomControlModule,
-    ClarityModule,
-    HttpClientModule
+    HttpClientModule,
+    ClarityModule
   ],
   providers: [],
   bootstrap: [AppComponent],

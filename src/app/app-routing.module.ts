@@ -9,6 +9,10 @@ import { SimplePopupComponent } from 'projects/simple-popup/src/public_api';
 
 const routes: Routes = [
   {
+    path: '',
+    component: BasicSetupComponent
+  },
+  {
     path: 'basic-setup',
     component: BasicSetupComponent
   },
