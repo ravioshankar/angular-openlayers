@@ -22,12 +22,12 @@ jobs:
         npm ci
         npm run build --if-present
         npm test
+        npm run doc
     - name: Deploy to GitHub Pages
-      uses: JamesIves/github-pages-deploy-action@2.0.3
+      uses: JamesIves/github-pages-deploy-action@3.0.2
+
       env:
-        ACTIONS_DEPLOY_KEY: ${{ secrets.ACCESS_TOKEN }}
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         BASE_BRANCH: master # The branch the action should deploy from.
         BRANCH: gh-pages # The branch the action should deploy to.
         FOLDER: documentation
-        BUILD_SCRIPT: npm ci && npm run doc
-        CI: true
