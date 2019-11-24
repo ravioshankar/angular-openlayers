@@ -1,16 +1,11 @@
 name: Node CI
-
 on: [push]
-
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     strategy:
       matrix:
         node-version: [10.x]
-
     steps:
     - uses: actions/checkout@v1
     - name: Use Node.js ${{ matrix.node-version }}
@@ -25,9 +20,8 @@ jobs:
         npm run doc
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@3.0.2
-
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         BASE_BRANCH: master # The branch the action should deploy from.
         BRANCH: gh-pages # The branch the action should deploy to.
-        FOLDER: documentation
+        FOLDER: documentation # The folder the action should deploy.
