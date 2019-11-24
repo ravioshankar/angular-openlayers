@@ -23,3 +23,4 @@ jobs:
       with:
         access-token: ${{ secrets.ACCESS_TOKEN }}
         source-directory: ./dist/angular-openlayers
+        build-command: npm run build 
