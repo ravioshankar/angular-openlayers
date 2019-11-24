@@ -1,12 +1,12 @@
 import { TestBed } from '@angular/core/testing';
 
-import { AngularOpenlayersIService } from './basic-setup.service';
+import { BasicSetupService } from './basic-setup.service';
 
-describe('AngularOpenlayersIService', () => {
+describe('BasicSetupService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
 
   it('should be created', () => {
-    const service: AngularOpenlayersIService = TestBed.get(AngularOpenlayersIService);
+    const service: BasicSetupService = TestBed.get(BasicSetupService);
     expect(service).toBeTruthy();
   });
 });

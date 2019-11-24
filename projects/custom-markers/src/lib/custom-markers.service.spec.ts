@@ -1,12 +1,12 @@
 import { TestBed } from '@angular/core/testing';
 
-import { AngularOpenlayersIIIService } from './custom-markers.service';
+import { CustomMarkersService } from './custom-markers.service';
 
-describe('AngularOpenlayersIIIService', () => {
+describe('CustomMarkersService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
 
   it('should be created', () => {
-    const service: AngularOpenlayersIIIService = TestBed.get(AngularOpenlayersIIIService);
+    const service: CustomMarkersService = TestBed.get(CustomMarkersService);
     expect(service).toBeTruthy();
   });
 });
