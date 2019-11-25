@@ -31,7 +31,7 @@ const routes: Routes = [
   {
     path: 'custom-control',
     component: CustomControlComponent
-  },
+  }
 ];
 
 @NgModule({

@@ -5,11 +5,14 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --prod",
+    "build:local": "ng build",
     "test": "ng test --code-coverage  --progress=true",
     "lint": "ng lint",
     "e2e": "ng e2e",
+    "copy:docs": "copyfiles /documentation/* dist",
     "doc:local": "compodoc -p projects/tsconfig.compodoc.json -s -o -w",
-    "doc": "compodoc -p projects/tsconfig.compodoc.json"
+    "doc": "compodoc -p projects/tsconfig.compodoc.json",
+    "launch": "serve dist"
   },
   "private": true,
   "dependencies": {
@@ -33,6 +36,7 @@
     "ol": "^5.3.0",
     "rimraf": "^3.0.0",
     "rxjs": "~6.5.3",
+    "serve": "^11.2.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
   },

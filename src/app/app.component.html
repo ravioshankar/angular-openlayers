@@ -3,29 +3,30 @@
     <header class="header header-3">
         <div class="branding">
             <a href="/basic-setup" class="nav-link">
-                <clr-icon shape="shield" style="width: 64px; height: 48px;"></clr-icon>
-                <span class="title">{{ title }}!</span>
+                <clr-icon shape="shield" style="width: 38px; height: 38px;"></clr-icon>
+                <span class="title">{{ title }}</span>
             </a>
         </div>
 
         <div class="header-nav">
-            <a href="https://ravioshankar.github.io/angular-openlayers/index.html" class="active nav-link nav-text">DOCS</a>
+            <a href="https://ravioshankar.github.io/angular-openlayers/index.html" class="nav-link nav-text">DOCS</a>
         </div>
 
         <div class="header-actions">
-
-            <a href="https://twitter.com/ravioshankar" class="active nav-link nav-icon-text">
-              <!-- <clr-icon shape="twitter"></clr-icon> -->
-              <span class="nav-text">twitter</span>
-          </a>
-          <a href="https://github.com/ravioshankar/angular-openlayers" class="active nav-link nav-icon-text">
-              <!-- <clr-icon shape="github"></clr-icon> -->
-              <span class="nav-text">github</span>
-          </a>
-      </div>
+            <clr-dropdown>
+                <button class="nav-icon" clrDropdownTrigger aria-label="toggle settings menu">
+                    <clr-icon shape="cog"></clr-icon>
+                    <clr-icon shape="caret down"></clr-icon>
+                </button>
+                <clr-dropdown-menu *clrIfOpen clrPosition="bottom-right">
+                    <a href="https://twitter.com/ravioshankar" clrDropdownItem>Twitter</a>
+                    <a href="https://github.com/ravioshankar/angular-openlayers" clrDropdownItem>Github</a>
+                </clr-dropdown-menu>
+            </clr-dropdown>
+        </div>
     </header>
   <div class="content-container">
-      <clr-vertical-nav>
+      <clr-vertical-nav [clrVerticalNavCollapsible]="true" [(clrVerticalNavCollapsed)]=collapsed>
         <a clrVerticalNavLink routerLink="/basic-setup" routerLinkActive="active">
           <clr-icon clrVerticalNavIcon shape="shield"></clr-icon>
           Basic Setup</a>
