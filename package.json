@@ -26,7 +26,9 @@
     "@angular/material": "^8.2.3",
     "@angular/platform-browser": "~8.2.14",
     "@angular/platform-browser-dynamic": "~8.2.14",
+    "@angular/pwa": "^0.803.21",
     "@angular/router": "~8.2.14",
+    "@angular/service-worker": "~8.2.14",
     "@clr/angular": "^2.3.2",
     "@clr/icons": "2.3.2",
     "@clr/ui": "2.3.2",
@@ -41,7 +43,7 @@
     "zone.js": "~0.10.2"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^0.803.19",
+    "@angular-devkit/build-angular": "^0.803.21",
     "@angular-devkit/build-ng-packagr": "~0.803.19",
     "@angular/cli": "~8.3.19",
     "@angular/compiler-cli": "~8.2.14",

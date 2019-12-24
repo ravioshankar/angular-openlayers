@@ -13,6 +13,8 @@ import { BasicSetupModule } from 'projects/basic-setup/src/public_api';
 import { CustomMarkersModule } from 'projects/custom-markers/src/public_api';
 import { SimplePopupModule } from 'projects/simple-popup/src/public_api';
 import { ClarityModule } from '@clr/angular';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,8 @@ import { ClarityModule } from '@clr/angular';
     SimplePopupModule,
     CustomControlModule,
     HttpClientModule,
-    ClarityModule
+    ClarityModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent],
