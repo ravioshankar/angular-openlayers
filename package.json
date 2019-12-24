@@ -29,6 +29,7 @@
     "@angular/pwa": "^0.803.21",
     "@angular/router": "~8.2.14",
     "@angular/service-worker": "~8.2.14",
+    "@angular/youtube-player": "^8.2.3",
     "@clr/angular": "^2.3.2",
     "@clr/icons": "2.3.2",
     "@clr/ui": "2.3.2",
@@ -40,6 +41,7 @@
     "rxjs": "~6.5.3",
     "serve": "^11.2.0",
     "tslib": "^1.10.0",
+    "youtube-player": "^5.5.2",
     "zone.js": "~0.10.2"
   },
   "devDependencies": {

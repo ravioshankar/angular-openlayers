@@ -4,7 +4,14 @@
 <div class="wrapper">
     <div id="map" class="map"></div>
     <div>
-        <!-- <p>YouTube Video : - <a href="https://www.youtube.com/watch?v=csuEdZZebFs"> Basic Setup </a></p> -->
-        <lib-read-me [youtubeUrl]="youtubeUrl"></lib-read-me>
+        <youtube-player
+        videoId="csuEdZZebFs"
+        suggestedQuality="highres"
+        [height]="850"
+        [width]="800"
+        [startSeconds]="43"
+        [endSeconds]="60">
+      </youtube-player>
     </div>
+
 </div>

@@ -1,3 +1,4 @@
+import { YouTubePlayerModule } from '@angular/youtube-player';
 import { HttpClientModule } from '@angular/common/http';
 import { CustomControlModule } from './../../projects/custom-control/src/lib/custom-control.module';
 import { BrowserModule } from '@angular/platform-browser';
@@ -15,12 +16,12 @@ import { SimplePopupModule } from 'projects/simple-popup/src/public_api';
 import { ClarityModule } from '@clr/angular';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
-
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
+    YouTubePlayerModule,
     BrowserModule,
     AppRoutingModule,
     BasicSetupModule,

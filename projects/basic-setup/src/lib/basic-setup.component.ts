@@ -7,7 +7,7 @@ import View from 'ol/View';
 @Component({
   selector: 'lib-basic-setup',
   templateUrl: './basic-setup.component.html',
-  styleUrls: ['./basic-setup.component.scss']
+  styleUrls: ['./basic-setup.component.scss'],
 })
 export class BasicSetupComponent implements OnInit {
 
@@ -16,6 +16,9 @@ export class BasicSetupComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    const tag = document.createElement('script');
+    tag.src = 'https://www.youtube.com/iframe_api';
+    document.body.appendChild(tag);
     this.initilizeMap();
   }
 
