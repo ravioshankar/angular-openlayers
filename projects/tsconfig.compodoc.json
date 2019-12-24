@@ -16,10 +16,6 @@
       "lib": [
         "es2018",
         "dom"
-      ],
-      "include": [
-        "**/*.ts",
-        "**/README.md"
       ]
     }
   }
