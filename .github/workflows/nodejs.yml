@@ -17,13 +17,13 @@ jobs:
         npm ci
         npm run build --if-present
         npm test
-        npm run doc
+        npm run docs
     - name: GitHub Pages Deploy
       uses: sterlingwes/gh-pages-deploy-action@v1.1
       with:
         access-token: ${{ secrets.ACCESS_TOKEN }}
         source-directory: documentation
-        build-command: npm run doc 
+        build-command: npm run docs
     - name: Deploy to Firebase
       uses: lowply/deploy-firebase@v0.0.2
       env:

@@ -10,7 +10,7 @@
     grid-template-rows: minmax(0, 1fr);
     grid-template-areas:
     'demo-area content-area';
-    grid-column-gap: 24px;
+    grid-column-gap: 12px;
   }
 
   .content-area {
@@ -22,3 +22,12 @@
     grid-area: demo-area;
 
    }
+
+   iframe {
+    border: 1px solid black;
+    width: 100%;
+}
+
+.output {
+    background: #eee;
+}

@@ -1,14 +1,12 @@
-
-
-
 <div class="wrapper">
-    <div id="map" class="map"></div>
-    <div>
-        <youtube-player
-        videoId="csuEdZZebFs"
-        suggestedQuality="highres"
-        >
-      </youtube-player>
-    </div>
+  <div class="content-area">
+    <iframe id="basic-setup" width="300" height="400"
+      src="https://ravioshankar.github.io/angular-openlayers/components/BasicSetupComponent.html">
+    </iframe>
+    <youtube-player videoId="csuEdZZebFs" suggestedQuality="highres" [height]="400" [width]="800">
+    </youtube-player>
+  </div>
+  <div id="map" class="map demo-area"></div>
+
 
 </div>
