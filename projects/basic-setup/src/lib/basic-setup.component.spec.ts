@@ -1,4 +1,3 @@
-import { ReadMeComponent } from './../../../read-me/src/lib/read-me.component';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { BasicSetupComponent } from './basic-setup.component';
@@ -11,7 +10,7 @@ describe('BasicSetupComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [HttpClientTestingModule],
-      declarations: [ BasicSetupComponent, ReadMeComponent ]
+      declarations: [ BasicSetupComponent,  ]
     })
     .compileComponents();
   }));

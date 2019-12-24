@@ -1,4 +1,3 @@
-import { ReadMeComponent } from './../../../read-me/src/lib/read-me.component';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
@@ -11,7 +10,7 @@ describe('SimplePopupComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [HttpClientTestingModule],
-      declarations: [ SimplePopupComponent, ReadMeComponent ]
+      declarations: [ SimplePopupComponent ]
     })
     .compileComponents();
   }));

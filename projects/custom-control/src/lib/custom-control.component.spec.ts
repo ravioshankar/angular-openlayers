@@ -1,4 +1,3 @@
-import { ReadMeComponent } from './../../../read-me/src/lib/read-me.component';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
@@ -11,7 +10,7 @@ describe('CustomControlComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [HttpClientTestingModule],
-      declarations: [ CustomControlComponent, ReadMeComponent ]
+      declarations: [ CustomControlComponent ]
     })
     .compileComponents();
   }));

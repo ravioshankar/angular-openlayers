@@ -1,5 +1,4 @@
 import { HttpClientTestingModule } from '@angular/common/http/testing';
-import { ReadMeComponent } from './../../../read-me/src/lib/read-me.component';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { OlProjSetupComponent } from './ol-proj-setup.component';
@@ -11,8 +10,7 @@ describe('OlProjSetupComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [HttpClientTestingModule],
-      declarations: [ OlProjSetupComponent,
-      ReadMeComponent ]
+      declarations: [ OlProjSetupComponent ]
     })
     .compileComponents();
   }));
