@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/angular-openlayers",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+[debug] [2019-12-24T05:49:12.434Z] ----------------------------------------------------------------------
+[debug] [2019-12-24T05:49:12.437Z] Command:       /home/bharamgo/.nvm/versions/node/v12.3.1/bin/node /home/bharamgo/.nvm/versions/node/v12.3.1/bin/firebase deploy --token 
+[debug] [2019-12-24T05:49:12.438Z] CLI Version:   7.11.0
+[debug] [2019-12-24T05:49:12.438Z] Platform:      linux
+[debug] [2019-12-24T05:49:12.438Z] Node Version:  v12.3.1
+[debug] [2019-12-24T05:49:12.877Z] Time:          Mon Dec 23 2019 23:49:12 GMT-0600 (GMT-06:00)
+[debug] [2019-12-24T05:49:12.877Z] ----------------------------------------------------------------------
+[debug] [2019-12-24T05:49:12.878Z] 
+[debug] [2019-12-24T05:49:12.889Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-12-24T05:49:12.890Z] > authorizing via signed-in user
+[debug] [2019-12-24T05:49:12.890Z] [iam] checking project angular-openlayers-15857 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2019-12-24T05:49:12.893Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/angular-openlayers-15857:testIamPermissions  
+
+[debug] [2019-12-24T05:49:13.231Z] <<< HTTP RESPONSE 200
+[debug] [2019-12-24T05:49:13.240Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/angular-openlayers-15857  
+ 
