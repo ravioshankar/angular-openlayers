@@ -2,10 +2,10 @@ import { CustomControlComponent } from './../../projects/custom-control/src/lib/
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { BasicSetupComponent } from 'projects/basic-setup/src/public_api';
-import { OlProjSetupComponent } from 'projects/ol-proj-setup/src/public_api';
-import { CustomMarkersComponent } from 'projects/custom-markers/src/public_api';
-import { SimplePopupComponent } from 'projects/simple-popup/src/public_api';
+import { BasicSetupComponent } from './../../projects/basic-setup/src/public_api';
+import { OlProjSetupComponent } from './../../projects/ol-proj-setup/src/public_api';
+import { CustomMarkersComponent } from './../../projects/custom-markers/src/public_api';
+import { SimplePopupComponent } from './../../projects/simple-popup/src/public_api';
 
 const routes: Routes = [
   {
