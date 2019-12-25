@@ -11,8 +11,8 @@
     "e2e": "ng e2e",
     "copy:docs": "copyfiles /documentation/* dist",
     "doc:local": "compodoc -p projects/tsconfig.compodoc.json -s -o -w",
-    "doc:project": "compodoc -p projects/tsconfig.compodoc.json",
-    "doc:app": "compodoc -p src/tsconfig.app.json",
+    "doc:project": "compodoc -p projects/tsconfig.compodoc.json --hideGenerator --theme [material]",
+    "doc:app": "compodoc -p src/tsconfig.app.json --hideGenerator --theme [material]",
     "docs": "npm run doc:app && npm run doc:project",
     "launch": "serve dist"
   },
