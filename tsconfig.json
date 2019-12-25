@@ -47,6 +47,12 @@
       ],
       "custom-control/*": [
         "dist/custom-control/*"
+      ],
+      "docs": [
+        "dist/docs"
+      ],
+      "docs/*": [
+        "dist/docs/*"
       ]
     }
   }

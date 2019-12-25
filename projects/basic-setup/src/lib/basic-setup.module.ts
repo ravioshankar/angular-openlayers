@@ -1,3 +1,4 @@
+import { DocsModule } from './../../../docs/src/lib/docs.module';
 import { NgModule } from '@angular/core';
 import { BasicSetupComponent } from './basic-setup.component';
 import { YouTubePlayerModule } from '@angular/youtube-player';
@@ -6,7 +7,7 @@ import { YouTubePlayerModule } from '@angular/youtube-player';
   declarations: [BasicSetupComponent],
   imports: [
 
-    YouTubePlayerModule
+    YouTubePlayerModule, DocsModule
   ],
   exports: [BasicSetupComponent]
 })
