@@ -1,0 +1,7 @@
+{
+  "npmClient": "npm",
+  "packages": [
+    "projects/*"
+  ],
+  "version": "0.0.0"
+}

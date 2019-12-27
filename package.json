@@ -9,12 +9,10 @@
     "test": "ng test --code-coverage  --progress=true",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "copy:docs": "copyfiles /documentation/* dist",
     "doc:local": "compodoc -p projects/tsconfig.compodoc.json -s -o -w",
-    "doc:project": "compodoc -p projects/tsconfig.compodoc.json --hideGenerator --theme [material]",
-    "doc:app": "compodoc -p src/tsconfig.app.json --hideGenerator --theme [material]",
-    "docs": "npm run doc:app && npm run doc:project",
-    "launch": "serve dist"
+    "doc:project": "lerna exec --parallel -- compodoc -p ./tsconfig.lib.json --hideGenerator --theme [material] --output='../../documentation/${LERNA_PACKAGE_NAME}/'",
+    "doc:app": "compodoc -p src/tsconfig.app.json --hideGenerator --theme [material] --output='documentation/'",
+    "docs": "npm run doc:app && npm run doc:project"
   },
   "private": true,
   "dependencies": {
@@ -67,6 +65,7 @@
     "karma-coverage-istanbul-reporter": "~2.1.0",
     "karma-jasmine": "~2.0.1",
     "karma-jasmine-html-reporter": "^1.4.2",
+    "lerna": "^3.19.0",
     "ng-packagr": "^5.7.1",
     "protractor": "~5.4.2",
     "ts-node": "~8.5.2",
