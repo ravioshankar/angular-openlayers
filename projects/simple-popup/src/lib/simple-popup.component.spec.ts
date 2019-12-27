@@ -2,6 +2,7 @@ import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { SimplePopupComponent } from './simple-popup.component';
+import { YouTubePlayerModule } from '@angular/youtube-player';
 
 describe('SimplePopupComponent', () => {
   let component: SimplePopupComponent;
@@ -9,7 +10,7 @@ describe('SimplePopupComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [HttpClientTestingModule],
+      imports: [HttpClientTestingModule, YouTubePlayerModule],
       declarations: [ SimplePopupComponent ]
     })
     .compileComponents();

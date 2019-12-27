@@ -2,6 +2,7 @@ import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CustomControlComponent } from './custom-control.component';
+import { YouTubePlayerModule } from '@angular/youtube-player';
 
 describe('CustomControlComponent', () => {
   let component: CustomControlComponent;
@@ -9,7 +10,7 @@ describe('CustomControlComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [HttpClientTestingModule],
+      imports: [HttpClientTestingModule, YouTubePlayerModule],
       declarations: [ CustomControlComponent ]
     })
     .compileComponents();

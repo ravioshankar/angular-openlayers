@@ -2,6 +2,7 @@ import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { OlProjSetupComponent } from './ol-proj-setup.component';
+import { YouTubePlayerModule } from '@angular/youtube-player';
 
 describe('OlProjSetupComponent', () => {
   let component: OlProjSetupComponent;
@@ -9,7 +10,7 @@ describe('OlProjSetupComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [HttpClientTestingModule],
+      imports: [HttpClientTestingModule, YouTubePlayerModule],
       declarations: [ OlProjSetupComponent ]
     })
     .compileComponents();

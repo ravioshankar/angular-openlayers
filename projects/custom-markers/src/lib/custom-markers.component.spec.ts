@@ -2,6 +2,7 @@ import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CustomMarkersComponent } from './custom-markers.component';
+import { YouTubePlayerModule } from '@angular/youtube-player';
 
 describe('CustomMarkersComponent', () => {
   let component: CustomMarkersComponent;
@@ -9,7 +10,7 @@ describe('CustomMarkersComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [HttpClientTestingModule],
+      imports: [HttpClientTestingModule, YouTubePlayerModule],
       declarations: [ CustomMarkersComponent ]
     })
     .compileComponents();
