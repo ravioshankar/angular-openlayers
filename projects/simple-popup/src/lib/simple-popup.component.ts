@@ -19,6 +19,9 @@ export class SimplePopupComponent implements OnInit {
 youtubeUrl = 'https://youtu.be/zJ8NPxnqSXg';
 youtubeVideoId = 'zJ8NPxnqSXg';
   ngOnInit() {
+    const tag = document.createElement('script');
+    tag.src = 'https://www.youtube.com/iframe_api';
+    document.body.appendChild(tag);
     this.initilizeMap();
   }
 
