@@ -1,3 +1,4 @@
+import { DocsModule } from './../../projects/docs/src/lib/docs.module';
 import { YouTubePlayerModule } from '@angular/youtube-player';
 import { HttpClientModule } from '@angular/common/http';
 import { CustomControlModule } from './../../projects/custom-control/src/lib/custom-control.module';
@@ -33,6 +34,7 @@ import { environment } from '../environments/environment';
     CustomControlModule,
     HttpClientModule,
     ClarityModule,
+    DocsModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],

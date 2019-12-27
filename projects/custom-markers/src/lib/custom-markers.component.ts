@@ -16,6 +16,7 @@ import OSM from 'ol/source/OSM';
 export class CustomMarkersComponent implements OnInit {
   map;
   youtubeUrl = 'https://www.youtube.com/watch?v=WQFjZymnF3M';
+  youtubeVideoId = 'WQFjZymnF3M';
   chicago;
   vectorSource;
   vectorLayer;
@@ -25,6 +26,7 @@ export class CustomMarkersComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
     this.initilizeMap();
   }
 

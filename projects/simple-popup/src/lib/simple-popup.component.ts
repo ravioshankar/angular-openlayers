@@ -17,6 +17,7 @@ export class SimplePopupComponent implements OnInit {
   constructor() { }
 
 youtubeUrl = 'https://youtu.be/zJ8NPxnqSXg';
+youtubeVideoId = 'zJ8NPxnqSXg';
   ngOnInit() {
     this.initilizeMap();
   }

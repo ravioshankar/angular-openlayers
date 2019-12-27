@@ -10,8 +10,8 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "doc:local": "compodoc -p projects/tsconfig.compodoc.json -s -o -w",
-    "doc:project": "lerna exec --parallel -- compodoc -p ./tsconfig.lib.json --hideGenerator --theme [material] --output='../../documentation/${LERNA_PACKAGE_NAME}/'",
-    "doc:app": "compodoc -p src/tsconfig.app.json --hideGenerator --theme [material] --output='documentation/'",
+    "doc:project": "lerna exec --parallel -- compodoc -p ./tsconfig.lib.json --hideGenerator --theme [Readthedocs] --disableCoverage --output='../../documentation/${LERNA_PACKAGE_NAME}/'",
+    "doc:app": "compodoc -p src/tsconfig.app.json --hideGenerator --theme [Readthedocs] --disableCoverage --output='documentation/'",
     "docs": "npm run doc:app && npm run doc:project"
   },
   "private": true,

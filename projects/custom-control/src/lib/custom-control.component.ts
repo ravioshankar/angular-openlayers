@@ -14,6 +14,8 @@ import {transform} from 'ol/proj.js';
 })
 export class CustomControlComponent implements OnInit {
   youtubeUrl = 'https://www.youtube.com/watch?v=csuEdZZebFs';
+  youtubeVideoId = 'csuEdZZebFs';
+
   constructor(private renderer: Renderer2) {
 
 

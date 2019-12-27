@@ -1,4 +1,3 @@
-import { DocsModule } from './../../../docs/src/lib/docs.module';
 import { YouTubePlayerModule } from '@angular/youtube-player';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
@@ -11,7 +10,7 @@ describe('BasicSetupComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [HttpClientTestingModule, YouTubePlayerModule, DocsModule],
+      imports: [HttpClientTestingModule, YouTubePlayerModule],
       declarations: [ BasicSetupComponent,  ]
     })
     .compileComponents();

@@ -14,6 +14,7 @@ export class OlProjSetupComponent implements OnInit {
 
   map;
   youtubeUrl = 'https://www.youtube.com/watch?v=xzljBhPQMJU';
+  youtubeVideoId = 'xzljBhPQMJU';
   constructor() { }
 
   ngOnInit() {

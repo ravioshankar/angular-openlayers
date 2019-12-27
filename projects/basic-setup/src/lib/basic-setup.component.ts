@@ -13,6 +13,8 @@ export class BasicSetupComponent implements OnInit {
 
   map;
   youtubeUrl = 'https://www.youtube.com/watch?v=csuEdZZebFs';
+  youtubeVideoId = 'csuEdZZebFs';
+  x = 'basic-setup';
   constructor() { }
 
   ngOnInit() {

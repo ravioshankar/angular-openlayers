@@ -1,10 +1,10 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'lib-docs',
   template: `
   <iframe id="appDocs" width="300" height="600"
-  src="https://ravioshankar.github.io/angular-openlayers/components/AppComponent.html">
+  src="https://ravioshankar.github.io/angular-openlayers/">
 </iframe>
   `,
   styleUrls: ['./docs.component.scss']
