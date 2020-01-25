@@ -28,6 +28,7 @@
               "src/manifest.webmanifest"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
               "node_modules/@clr/icons/clr-icons.min.css",
               "node_modules/@clr/ui/clr-ui.min.css",
               "src/styles.scss",
@@ -85,6 +86,7 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
               "src/styles.scss"
             ],
             "scripts": [],
@@ -339,6 +341,41 @@
             "tsConfig": [
               "projects/docs/tsconfig.lib.json",
               "projects/docs/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "clustered-features": {
+      "projectType": "library",
+      "root": "projects/clustered-features",
+      "sourceRoot": "projects/clustered-features/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/clustered-features/tsconfig.lib.json",
+            "project": "projects/clustered-features/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/clustered-features/src/test.ts",
+            "tsConfig": "projects/clustered-features/tsconfig.spec.json",
+            "karmaConfig": "projects/clustered-features/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/clustered-features/tsconfig.lib.json",
+              "projects/clustered-features/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"

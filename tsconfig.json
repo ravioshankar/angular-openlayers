@@ -53,6 +53,12 @@
       ],
       "docs/*": [
         "dist/docs/*"
+      ],
+      "clustered-features": [
+        "dist/clustered-features"
+      ],
+      "clustered-features/*": [
+        "dist/clustered-features/*"
       ]
     }
   }

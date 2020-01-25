@@ -7,6 +7,7 @@ import { BasicSetupComponent } from './../../projects/basic-setup/src/public_api
 import { OlProjSetupComponent } from './../../projects/ol-proj-setup/src/public_api';
 import { CustomMarkersComponent } from './../../projects/custom-markers/src/public_api';
 import { SimplePopupComponent } from './../../projects/simple-popup/src/public_api';
+import { ClusteredFeaturesComponent } from './../../projects/clustered-features/src/public-api';
 
 const routes: Routes = [
   {
@@ -35,6 +36,10 @@ const routes: Routes = [
   },{
     path: 'docs',
     component: DocsComponent
+  },
+  {
+    path: 'clustered-features',
+    component: ClusteredFeaturesComponent
   }
 ];
 
