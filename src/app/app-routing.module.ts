@@ -33,7 +33,8 @@ const routes: Routes = [
   {
     path: 'custom-control',
     component: CustomControlComponent
-  },{
+  },
+  {
     path: 'docs',
     component: DocsComponent
   },
