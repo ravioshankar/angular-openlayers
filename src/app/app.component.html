@@ -1,31 +1,6 @@
 
 <div class="main-container">
-    <header class="header header-3">
-        <div class="branding">
-            <a href="/" class="nav-link">
-                <clr-icon shape="shield" style="width: 38px; height: 38px;"></clr-icon>
-                <span class="title">{{ title }}</span>
-            </a>
-        </div>
-
-        <div class="header-nav">
-            <!-- <a " class="nav-link nav-text"> -->
-                <a  routerLink="/docs" routerLinkActive="active" class="nav-link nav-text">DOCS</a>
-        </div>
-
-        <div class="header-actions">
-            <clr-dropdown>
-                <button class="nav-icon" clrDropdownTrigger aria-label="toggle settings menu">
-                    <clr-icon shape="cog"></clr-icon>
-                    <clr-icon shape="caret down"></clr-icon>
-                </button>
-                <clr-dropdown-menu *clrIfOpen clrPosition="bottom-right">
-                    <a href="https://twitter.com/ravioshankar" clrDropdownItem>Twitter</a>
-                    <a href="https://github.com/ravioshankar/angular-openlayers" clrDropdownItem>Github</a>
-                </clr-dropdown-menu>
-            </clr-dropdown>
-        </div>
-    </header>
+  <app-header></app-header>
   <div class="content-container">
       <clr-vertical-nav [clrVerticalNavCollapsible]="true" [(clrVerticalNavCollapsed)]=collapsed>
         <a clrVerticalNavLink routerLink="/basic-setup" routerLinkActive="active">
@@ -46,6 +21,10 @@
         <a clrVerticalNavLink routerLink="/clustered-features" routerLinkActive="active">
             <clr-icon clrVerticalNavIcon shape="shield"></clr-icon>
             Clustered Features</a>
+
+            <a clrVerticalNavLink routerLink="/geojson-rendering" routerLinkActive="active">
+                <clr-icon clrVerticalNavIcon shape="shield"></clr-icon>
+                Geojson Rendering</a>
       </clr-vertical-nav>
 
       <div class="content-area">

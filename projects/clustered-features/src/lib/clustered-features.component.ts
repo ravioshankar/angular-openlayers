@@ -14,8 +14,8 @@ import {Circle as CircleStyle, Fill, Stroke, Style, Text} from 'ol/style';
 })
 export class ClusteredFeaturesComponent implements OnInit {
   map;
-  youtubeUrl = 'https://www.youtube.com/watch?v=ysL9w1o7zMw&t=';
-  youtubeVideoId = 'ysL9w1o7zMw&t=';
+  youtubeUrl = 'https://www.youtube.com/watch?v=ysL9w1o7zMw';
+  youtubeVideoId = 'ysL9w1o7zMw';
   distance;
   clusterSource;
   constructor() { }

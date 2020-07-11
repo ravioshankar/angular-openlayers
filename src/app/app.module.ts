@@ -18,9 +18,12 @@ import { ClarityModule } from '@clr/angular';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { ClusteredFeaturesModule } from './../../projects/clustered-features/src/public-api';
+import { GeojsonRenderingModule } from './../../projects/geojson-rendering/src/public-api';
+import { HeaderComponent } from './header/header.component';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent
   ],
   imports: [
     YouTubePlayerModule,
@@ -38,6 +41,7 @@ import { ClusteredFeaturesModule } from './../../projects/clustered-features/src
     DocsModule,
     ClusteredFeaturesModule,
     MatSliderModule,
+    GeojsonRenderingModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],

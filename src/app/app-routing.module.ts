@@ -8,6 +8,7 @@ import { OlProjSetupComponent } from './../../projects/ol-proj-setup/src/public_
 import { CustomMarkersComponent } from './../../projects/custom-markers/src/public_api';
 import { SimplePopupComponent } from './../../projects/simple-popup/src/public_api';
 import { ClusteredFeaturesComponent } from './../../projects/clustered-features/src/public-api';
+import { GeojsonRenderingComponent } from './../../projects/geojson-rendering/src/public-api';
 
 const routes: Routes = [
   {
@@ -40,6 +41,10 @@ const routes: Routes = [
   {
     path: 'clustered-features',
     component: ClusteredFeaturesComponent
+  },
+  {
+    path: 'geojson-rendering',
+    component: GeojsonRenderingComponent
   }
 ];
 

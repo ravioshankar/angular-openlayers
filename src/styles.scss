@@ -1,72 +1,45 @@
-/* You can add global styles to this file, and also import other style files */
-// h1 {
-//     color: #369;
-//     font-family: Arial, Helvetica, sans-serif;
-//     font-size: 250%;
-//   }
-//   h2, h3 {
-//     color: #444;
-//     font-family: Arial, Helvetica, sans-serif;
-//     font-weight: lighter;
-//   }
+
   body {
     width: 100%;
     height: 100%;
   }
-  // body, input[text], button {
-  //   color: #888;
-  //   font-family: Cambria, Georgia;
-  // }
-  // a {
-  //   cursor: pointer;
-  //   cursor: hand;
-  // }
-  // button {
-  //   font-family: Arial;
-  //   background-color: #eee;
-  //   border: none;
-  //   padding: 5px 10px;
-  //   border-radius: 4px;
-  //   cursor: pointer;
-  //   cursor: hand;
-  // }
-  // button:hover {
-  //   background-color: #cfd8dc;
-  // }
-  // button:disabled {
-  //   background-color: #eee;
-  //   color: #aaa;
-  //   cursor: auto;
-  // }
-
-  // /* Navigation link styles */
-  // nav a {
-  //   padding: 5px 10px;
-  //   text-decoration: none;
-  //   margin-right: 10px;
-  //   margin-top: 10px;
-  //   display: inline-block;
-  //   background-color: #eee;
-  //   border-radius: 4px;
-  // }
-  // nav a:visited, a:link {
-  //   color: #607D8B;
-  // }
-  // nav a:hover {
-  //   color: #039be5;
-  //   background-color: #CFD8DC;
-  // }
-  // nav a.active {
-  //   color: #039be5;
-  // }
-
-  // /* everywhere else */
-  // * {
-  //   font-family: Arial, Helvetica, sans-serif;
-  // }
-  iframe {
-    border: 1px solid black;
-    width: 100%;
+    iframe {
+      height: 120vh;
+      border: 1px solid whitesmoke;
+      width: 100%;
+      overflow:hidden;
     }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/**
+.map {
+  height: 100%;
+  width: 100%;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-rows: minmax(0, 1fr);
+  grid-template-areas:
+  'content-area' 
+  'demo-area'
+  'video-area';
+  grid-row-gap: 12px;
+}
+
+.content-area {
+  grid-area: content-area;
+  height: 120vh;
+
+ }
+
+ .demo-area {
+  grid-area: demo-area;
+
+ }
+ .video-area {
+  grid-area: video-area;
+
+ }
+ **/

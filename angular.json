@@ -383,6 +383,41 @@
           }
         }
       }
+    },
+    "geojson-rendering": {
+      "projectType": "library",
+      "root": "projects/geojson-rendering",
+      "sourceRoot": "projects/geojson-rendering/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/geojson-rendering/tsconfig.lib.json",
+            "project": "projects/geojson-rendering/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/geojson-rendering/src/test.ts",
+            "tsConfig": "projects/geojson-rendering/tsconfig.spec.json",
+            "karmaConfig": "projects/geojson-rendering/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/geojson-rendering/tsconfig.lib.json",
+              "projects/geojson-rendering/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "angular-openlayers"

@@ -59,6 +59,12 @@
       ],
       "clustered-features/*": [
         "dist/clustered-features/*"
+      ],
+      "geojson-rendering": [
+        "dist/geojson-rendering"
+      ],
+      "geojson-rendering/*": [
+        "dist/geojson-rendering/*"
       ]
     }
   }

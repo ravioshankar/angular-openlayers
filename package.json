@@ -10,8 +10,8 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "doc:local": "compodoc -p projects/tsconfig.compodoc.json -s -o -w",
-    "doc:project": "lerna exec --parallel -- compodoc -p ./tsconfig.lib.json --hideGenerator --theme [Readthedocs] --disableCoverage --output='../../documentation/${LERNA_PACKAGE_NAME}/'",
-    "doc:app": "compodoc -p src/tsconfig.app.json --hideGenerator --theme [Readthedocs] --disableCoverage --output='documentation/'",
+    "doc:project": "lerna exec --parallel -- compodoc -p ./tsconfig.lib.json --hideGenerator --disableCoverage --output='../../documentation/${LERNA_PACKAGE_NAME}/'",
+    "doc:app": "compodoc -p src/tsconfig.app.json --hideGenerator --disableCoverage --output='documentation/'",
     "docs": "npm run doc:app && npm run doc:project"
   },
   "private": true,
@@ -30,9 +30,7 @@
     "@angular/router": "~8.2.14",
     "@angular/service-worker": "~8.2.14",
     "@angular/youtube-player": "^8.2.3",
-    "@clr/angular": "^2.3.2",
-    "@clr/icons": "2.3.2",
-    "@clr/ui": "2.3.2",
+    "@clr/angular": "^2.4.4",
     "@webcomponents/custom-elements": "^1.3.1",
     "copyfiles": "^2.1.1",
     "core-js": "^3.4.1",
@@ -45,7 +43,9 @@
     "serve": "^11.2.0",
     "tslib": "^1.10.0",
     "youtube-player": "^5.5.2",
-    "zone.js": "~0.10.2"
+    "zone.js": "~0.10.2",
+    "@clr/ui": "2.4.4",
+    "@clr/icons": "2.4.4"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^0.803.21",
