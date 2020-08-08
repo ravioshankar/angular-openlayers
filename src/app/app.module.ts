@@ -20,10 +20,12 @@ import { environment } from '../environments/environment';
 import { ClusteredFeaturesModule } from './../../projects/clustered-features/src/public-api';
 import { GeojsonRenderingModule } from './../../projects/geojson-rendering/src/public-api';
 import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     YouTubePlayerModule,
