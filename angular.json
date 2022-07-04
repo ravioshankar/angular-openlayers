@@ -354,5 +354,7 @@
       }
     }
   },
-  "defaultProject": "angular-openlayers"
+  "cli": {
+    "analytics": false
+  }
 }
