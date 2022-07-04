@@ -10,13 +10,14 @@
       "prefix": "app",
       "schematics": {
         "@schematics/angular:component": {
-          "styleext": "scss"
+          "style": "scss"
         }
       },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "aot": true,
             "outputPath": "dist/angular-openlayers",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -41,6 +42,12 @@
           },
           "configurations": {
             "production": {
+              "budgets": [
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb"
+                }
+              ],
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
@@ -151,7 +158,12 @@
             "tsConfig": "projects/basic-setup/tsconfig.lib.json",
             "project": "projects/basic-setup/ng-package.json"
           }
-        },
+        ,          "configurations": {
+            "production": {
+              "tsConfig": "projects/basic-setup/tsconfig.lib.prod.json"
+            }
+          }
+},
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
@@ -186,7 +198,12 @@
             "tsConfig": "projects/ol-proj-setup/tsconfig.lib.json",
             "project": "projects/ol-proj-setup/ng-package.json"
           }
-        },
+        ,          "configurations": {
+            "production": {
+              "tsConfig": "projects/ol-proj-setup/tsconfig.lib.prod.json"
+            }
+          }
+},
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
@@ -221,7 +238,12 @@
             "tsConfig": "projects/custom-markers/tsconfig.lib.json",
             "project": "projects/custom-markers/ng-package.json"
           }
-        },
+        ,          "configurations": {
+            "production": {
+              "tsConfig": "projects/custom-markers/tsconfig.lib.prod.json"
+            }
+          }
+},
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
@@ -256,7 +278,12 @@
             "tsConfig": "projects/simple-popup/tsconfig.lib.json",
             "project": "projects/simple-popup/ng-package.json"
           }
-        },
+        ,          "configurations": {
+            "production": {
+              "tsConfig": "projects/simple-popup/tsconfig.lib.prod.json"
+            }
+          }
+},
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
@@ -291,7 +318,12 @@
             "tsConfig": "projects/custom-control/tsconfig.lib.json",
             "project": "projects/custom-control/ng-package.json"
           }
-        },
+        ,          "configurations": {
+            "production": {
+              "tsConfig": "projects/custom-control/tsconfig.lib.prod.json"
+            }
+          }
+},
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
@@ -326,7 +358,12 @@
             "tsConfig": "projects/docs/tsconfig.lib.json",
             "project": "projects/docs/ng-package.json"
           }
-        },
+        ,          "configurations": {
+            "production": {
+              "tsConfig": "projects/docs/tsconfig.lib.prod.json"
+            }
+          }
+},
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
@@ -361,7 +398,12 @@
             "tsConfig": "projects/clustered-features/tsconfig.lib.json",
             "project": "projects/clustered-features/ng-package.json"
           }
-        },
+        ,          "configurations": {
+            "production": {
+              "tsConfig": "projects/clustered-features/tsconfig.lib.prod.json"
+            }
+          }
+},
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
@@ -396,7 +438,12 @@
             "tsConfig": "projects/geojson-rendering/tsconfig.lib.json",
             "project": "projects/geojson-rendering/ng-package.json"
           }
-        },
+        ,          "configurations": {
+            "production": {
+              "tsConfig": "projects/geojson-rendering/tsconfig.lib.prod.json"
+            }
+          }
+},
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
