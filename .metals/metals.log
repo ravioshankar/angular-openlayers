@@ -1,3 +1,0 @@
-2020.09.16 19:43:29 INFO  started: Metals version 0.9.3 in workspace 'E:\github\angular-openlayers' for client vscode.
-2020.09.16 19:43:30 INFO  time: initialize in 0.93s
-2020.09.16 19:43:33 WARN  no build tool detected in workspace 'E:\github\angular-openlayers'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 

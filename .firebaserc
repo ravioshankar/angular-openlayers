@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "angularopenlayers"
+  },
+  "targets": {
+    "angularopenlayers": {
+      "hosting": {
+        "angular-openlayers": [
+          "angularopenlayers"
+        ]
+      }
+    }
   }
 }

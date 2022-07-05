@@ -42,3 +42,8 @@ Thumbs.db
 documentation
 .firebase/hosting.ZGlzdA.cache
 .firebase/hosting.ZGlzdFxhbmd1bGFyLW9wZW5sYXllcnM.cache
+
+# Firebase
+.firebase
+*-debug.log
+.runtimeconfig.json
