@@ -1,0 +1,65 @@
+{
+  "openlayers": {
+    "siteUrl": "https://openlayers.org/",
+    "title": "Openlayers",
+    "logoUrl": "assets/Openlayers-logo.png",
+    "githubUrl": "",
+    "routerLink": "ng-openlayers"
+  },
+  "leaflet": {
+    "siteUrl": "https://leafletjs.com/",
+    "title": "Leaflet",
+    "logoUrl": "assets/leaflet.png",
+    "githubUrl": "",
+    "routerLink": "ng-leaflet"
+  },
+  "Deck.GL": {
+    "siteUrl": "https://deck.gl/",
+    "title": "Deck.GL",
+    "logoUrl": "assets/DeckGl-logo.jpg",
+    "githubUrl": "",
+    "routerLink": "ng-deckgl"
+  },
+  "Kepler.GL": {
+    "siteUrl": "https://kepler.gl/",
+    "title": "Kepler.GL",
+    "logoUrl": "assets/DeckGl-logo.jpg",
+    "githubUrl": "",
+    "routerLink": "ng-keplergl"
+  },
+  "Luma.GL": {
+    "siteUrl": "https://luma.gl/",
+    "title": "Luma.GL",
+    "logoUrl": "assets/DeckGl-logo.jpg",
+    "githubUrl": "",
+    "routerLink": "ng-lumagl"
+  },
+  "Mapbox.GL": {
+    "siteUrl": "https://docs.mapbox.com/mapbox-gl-js/api/",
+    "title": "Mapbox.GL",
+    "logoUrl": "assets/DeckGl-logo.jpg",
+    "githubUrl": "",
+    "routerLink": "ng-mapboxgl"
+  },
+  "Harp.GL": {
+    "siteUrl": "https://www.harp.gl/",
+    "title": "Harp.GL",
+    "logoUrl": "assets/HarpGL-logo.jpg",
+    "githubUrl": "",
+    "routerLink": "ng-harpgl"
+  },
+  "Cesium": {
+    "siteUrl": "https://cesium.com/",
+    "title": "Cesium",
+    "logoUrl": "assets/cesium-logo.png",
+    "githubUrl": "",
+    "routerLink": "ng-openlayers"
+  },
+  "ThreeJs": {
+    "siteUrl": "https://threejs.org/",
+    "title": "ThreeJs",
+    "logoUrl": "assets/cesium-logo.png",
+    "githubUrl": "",
+    "routerLink": "ng-openlayers"
+  }
+}
